@@ -1,0 +1,71 @@
+/*----------------------------INICIO Body-----------------------------------*/
+.marcoPagina{/*-----Se agrega clase para "pisar" main.css de prueba-----*/
+    background-color: nth($colores, 1);
+
+}
+body{ /* Cuerpo de todas las páginas - Dejar siempre al inicio para poder pisar con otro más especifico*/
+    background-color: nth($colores, 1);
+    color: nth($colores, 2);
+    text-shadow: nth($colores, 6) 0px 0px 3px;
+    font-family: 'Patrick Hand', regular;
+    text-align:left;
+} 
+.mainDiv {
+    margin-top: $topReservado;
+}
+.mainClass__mainSection {
+    display:grid;
+    margin-top: $topReservado;
+    grid-template-areas: 
+    "txtTit txtTit txtTit"
+    "texto1 texto1 texto1"
+    "imagen1 texto2 imagen2"
+    "texto3 texto3 imagen3"; 
+    grid-template-columns: repeat(auto-fill);
+/*     grid-gap: 0.3rem; */
+}
+
+.txtTitulo{
+    grid-area: txtTit;
+    border: 1px solid nth($colores, 3);
+}
+.txtUno{
+    grid-area: texto1;
+    border: 1px solid nth($colores, 3);
+}
+.txtDos{
+    grid-area: texto2;
+    border: 1px solid nth($colores, 3);
+}
+.txtTres{
+    grid-area: texto3;
+    border: 1px solid nth($colores, 3);
+}
+.imgUno{
+    grid-area: imagen1;
+    border: 1px solid nth($colores, 3);
+}
+.imgDos{
+    grid-area: imagen2;
+    border: 1px solid nth($colores, 3);
+}
+.imgTres{
+    grid-area: imagen3;
+    border: 1px solid nth($colores, 3);
+}
+.tablaUno{
+    grid-area: tabla1;
+    border: 1px solid nth($colores, 3);
+}
+
+.mainClass__col__parrafo{ /* Clase Parrafos dentro de tablas con estructura GRID / Estructura Col->texto*/
+    color: nth($colores, 2);
+}
+
+main div {/*Bloques de informacion general*/
+    padding: 0.1rem;    
+}
+
+
+
+/*----------------------------FIN Body-----------------------------------*/

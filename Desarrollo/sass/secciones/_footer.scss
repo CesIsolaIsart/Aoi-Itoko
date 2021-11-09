@@ -1,0 +1,37 @@
+/*----------------------------INICIO Footer-----------------------------------*/
+.imagenFooter{/*Clase Imagen fondo del footer*/
+    background-image: radial-gradient(circle at 50%, nth($colores, 2),nth($colores, 3));
+    background-size:contain;
+    width: 100%;
+}
+.footer{
+    color: white;
+    text-shadow: rgb(131, 131, 131) 0px 0px 5px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin:auto;
+    padding: 1rem;
+}
+.fa-whatsapp  {/*Logo Whap*/
+    color:white;
+    background:
+     linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat,
+     radial-gradient(#25d366 60%,transparent 0);
+}
+.fa-instagram  {/*Logo IG*/git
+    color:white;
+    background:
+    linear-gradient(#cabbc6,#cabbc6) 14% 84%/16% 16% no-repeat,
+    radial-gradient(#d3258a 60%,transparent 0);
+}
+.fa-facebook  {/*Logo FB*/
+    color:rgb(255, 255, 255);
+    background:
+    linear-gradient(#a0a0a8,#2c36be) 14% 84%/16% 16% no-repeat,
+    radial-gradient(#2c36be 60%,transparent 0);
+}
+
+
+
+/*----------------------------FIN Footer-----------------------------------*/

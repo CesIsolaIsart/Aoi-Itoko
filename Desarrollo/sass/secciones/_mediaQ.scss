@@ -1,0 +1,61 @@
+/*---------------------------------------INICIO MEDIA----------------------------------------------*/
+
+@media only screen and (max-width: 768px){
+    .marcoPagina {
+        font-size:smaller;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .mainSection {
+        grid-template-areas: 
+        "txtTit txtTit"
+        "imagen1 texto1"
+        "texto2 imagen2"
+        "imagen3 texto3";
+        grid-gap: 0.2rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    .d-block{
+        min-height: 165px;
+        min-width: 165px;    
+    }
+    .imgUno {
+        min-height: auto;
+        min-width: auto;
+    } 
+} 
+@media only screen and (max-width: 576px){ /*Se asumen 576 segun BOOTSTRAP para Mobile*/
+    .marcoPagina {
+        font-size: x-small;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .mainSection {
+        grid-template-areas: 
+        "txtTit"
+        "texto1"
+        "imagen1"
+        "texto2"
+        "imagen2"
+        "texto3"
+        "imagen3";
+        grid-template-columns: repeat(auto-fill);
+        grid-gap: 0.1rem;
+    }
+    .img {
+        margin: auto;
+    }
+    .d-block{
+        min-height: 100px;
+        min-width: 100px;    
+    }
+}
+
+/*---------------------------------------FIN MEDIA----------------------------------------------*/

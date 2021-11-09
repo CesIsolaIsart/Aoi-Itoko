@@ -1,0 +1,17 @@
+/*----------------------------INICIO Adopcion-----------------------------------*/
+
+.mainClass__mainAdopcion{
+    display:grid;
+    margin-top: $topReservado;
+    grid-template-areas:
+    "txtTit txtTit"
+    "imagen1 texto1";
+    grid-template-columns: repeat(auto-fill);
+    grid-gap: 0.3rem;  
+}
+
+#imgCarrusel{
+    width:10rem;
+    height:10rem;
+}
+/*----------------------------FIN Adopcion-----------------------------------*/

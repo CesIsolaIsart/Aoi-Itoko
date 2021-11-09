@@ -1,0 +1,17 @@
+@keyframes sombreado {
+    15% {text-shadow: rgb(255, 255, 255) 0px 0px 5px}
+    85% {text-shadow: rgb(0, 0, 0) 0px 0px 5px}
+    100% {text-shadow: rgb(111, 112, 114) 0px 0px 5px}
+}
+@keyframes tituloInicio {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+@keyframes rezizeImg {
+    from {transform:scale(100%);}
+    to {transform:scale(115%);}
+}
+@keyframes rezizeTxt {
+    from {transform:scale(100%);}
+    to {transform:scale(105%);}
+}

@@ -1,0 +1,30 @@
+/*----------------------------INICIO Contacto-----------------------------------*/
+
+#listaContacto {/*Lista de valores de entrada en Contacto*/
+    padding-left: 0.5rem;
+    list-style-type: none;
+}
+
+.mainClass__mainContacto{
+    display:grid;
+    margin-top: $topReservado;
+    grid-template-areas:
+    "txtTit txtTit"
+    "contactos form"
+    "mapa form";
+    grid-template-columns: repeat(auto-fill);
+    grid-gap: 0.3rem;
+}
+.contactos{
+    grid-area: contactos;
+    border: 1px solid black;    
+}
+.mapa{
+    grid-area: mapa;
+    border: 1px solid black;       
+}
+.formContacto{
+    grid-area: form;
+    border: 1px solid black;    
+}
+/*----------------------------FIN Contacto-----------------------------------*/

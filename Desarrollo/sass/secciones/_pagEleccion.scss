@@ -1,0 +1,14 @@
+/*----------------------------INICIO Eleccion-----------------------------------*/
+
+.mainClass__mainEleccion{
+    display:grid;
+    margin-top: $topReservado;
+    grid-template-areas:
+    "txtTit txtTit"
+    "imagen1 texto1"
+    "imagen1 texto2" ;
+    grid-template-columns: repeat(auto-fill);
+    grid-gap: 0.3rem;      
+}
+
+/*----------------------------FIN Eleccion-----------------------------------*/

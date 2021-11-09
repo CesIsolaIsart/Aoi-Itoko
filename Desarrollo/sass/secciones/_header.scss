@@ -1,0 +1,70 @@
+/*----------------------------INICIO Header-----------------------------------*/
+
+.imagenHeader{/*Clase Imagen fondo de la cabecera/secciones*/
+    background-color:nth($colores, 3);
+/*    background-image: url("../imagenes//fondo\ header.png"); */
+    background-image: radial-gradient(circle at 50%, nth($colores, 2),nth($colores, 3));
+    width: 100%;
+    position:fixed;
+    text-shadow: nth($colores, 4) 0px 0px 5px;
+    text-align:center;
+    top: 0;
+}
+
+.parrafo{ /* Clase Parrafos: todos los parrafos base / Los parrafos dentro de GRID se pisan con col_parrafo*/
+    color: black;
+}
+.col-md-auto {/*Alineacion Titulo*/
+    text-align:center;
+}
+h3{ /* h3 por fuera del header*/
+    color: nth($colores, 3);
+    text-shadow: nth($colores, 5) 0px 0px 5px;
+}
+h2{
+    margin-bottom: 0;
+}
+
+.imageHeader__h2{ /* Subtitulo de cada seccion + Subtitulo La Prima Azul*/
+    font-family: 'Indie Flower', regular;
+    font-weight:900;
+    text-transform: lowercase;
+    font-size: 5rem;
+    color:nth($colores, 1);
+    animation-name: tituloInicio; /*una sola vez al cargar pagina*/
+    animation-duration: 4s;
+    text-align:center;
+}
+
+.imageHeader__h3{ /* Titulo AOI ITOKO*/
+    animation: tituloInicio;
+    font-style:italic;
+    text-align:center;
+    color: nth($colores, 1);
+}
+
+.listaMenu{ /*Menu - Clase:listaMenu*/
+    justify-content: space-between;
+    margin: auto;
+    position:fixed;
+    list-style: none;
+    text-shadow: nth($colores, 1) 0px 0px 3px;
+}
+
+.listaMenuInd{ /*Menu - Clase:listaMenu*/
+    color: nth($colores, 1);
+    text-shadow: nth($colores, 6) 0px 0px 8px;
+}
+
+.listaMenuInd :hover{
+    animation-name: sombreado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.img :hover{
+    animation-name: rezizeImg;
+    animation-duration: 1s;
+}
+
+/*----------------------------FIN Header-----------------------------------*/

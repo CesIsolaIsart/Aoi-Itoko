@@ -1,0 +1,362 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*------------------------------Paleta de colores-------------------------------*/
+/*-8-/--td--*/
+@keyframes sombreado {
+  15% {
+    text-shadow: white 0px 0px 5px; }
+  85% {
+    text-shadow: black 0px 0px 5px; }
+  100% {
+    text-shadow: #6f7072 0px 0px 5px; } }
+
+@keyframes tituloInicio {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(360deg); } }
+
+@keyframes rezizeImg {
+  from {
+    transform: scale(100%); }
+  to {
+    transform: scale(115%); } }
+
+@keyframes rezizeTxt {
+  from {
+    transform: scale(100%); }
+  to {
+    transform: scale(105%); } }
+
+/*----------------------------INICIO Header-----------------------------------*/
+.imagenHeader {
+  /*Clase Imagen fondo de la cabecera/secciones*/
+  background-color: #3d3b61;
+  /*    background-image: url("../imagenes//fondo\ header.png"); */
+  background-image: radial-gradient(circle at 50%, #57538D, #3d3b61);
+  width: 100%;
+  position: fixed;
+  text-shadow: #571637 0px 0px 5px;
+  text-align: center;
+  top: 0; }
+
+.parrafo {
+  /* Clase Parrafos: todos los parrafos base / Los parrafos dentro de GRID se pisan con col_parrafo*/
+  color: black; }
+
+.col-md-auto {
+  /*Alineacion Titulo*/
+  text-align: center; }
+
+h3 {
+  /* h3 por fuera del header*/
+  color: #3d3b61;
+  text-shadow: #836da0 0px 0px 5px; }
+
+h2 {
+  margin-bottom: 0; }
+
+.imageHeader__h2 {
+  /* Subtitulo de cada seccion + Subtitulo La Prima Azul*/
+  font-family: 'Indie Flower', regular;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-size: 5rem;
+  color: #b3e1f8;
+  animation-name: tituloInicio;
+  /*una sola vez al cargar pagina*/
+  animation-duration: 4s;
+  text-align: center; }
+
+.imageHeader__h3 {
+  /* Titulo AOI ITOKO*/
+  animation: tituloInicio;
+  font-style: italic;
+  text-align: center;
+  color: #b3e1f8; }
+
+.listaMenu {
+  /*Menu - Clase:listaMenu*/
+  justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  list-style: none;
+  text-shadow: #b3e1f8 0px 0px 3px; }
+
+.listaMenuInd {
+  /*Menu - Clase:listaMenu*/
+  color: #b3e1f8;
+  text-shadow: #99999b 0px 0px 8px; }
+
+.listaMenuInd :hover {
+  animation-name: sombreado;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+.img :hover {
+  animation-name: rezizeImg;
+  animation-duration: 1s; }
+
+/*----------------------------FIN Header-----------------------------------*/
+/*----------------------------INICIO Body-----------------------------------*/
+.marcoPagina {
+  /*-----Se agrega clase para "pisar" main.css de prueba-----*/
+  background-color: #b3e1f8; }
+
+body {
+  /* Cuerpo de todas las páginas - Dejar siempre al inicio para poder pisar con otro más especifico*/
+  background-color: #b3e1f8;
+  color: #57538D;
+  text-shadow: #99999b 0px 0px 3px;
+  font-family: 'Patrick Hand', regular;
+  text-align: left; }
+
+.mainDiv {
+  margin-top: 11rem; }
+
+.mainClass__mainSection {
+  display: grid;
+  margin-top: 11rem;
+  grid-template-areas: "txtTit txtTit txtTit" "texto1 texto1 texto1" "imagen1 texto2 imagen2" "texto3 texto3 imagen3";
+  grid-template-columns: repeat(auto-fill);
+  /*     grid-gap: 0.3rem; */ }
+
+.txtTitulo {
+  grid-area: txtTit;
+  border: 1px solid #3d3b61; }
+
+.txtUno {
+  grid-area: texto1;
+  border: 1px solid #3d3b61; }
+
+.txtDos {
+  grid-area: texto2;
+  border: 1px solid #3d3b61; }
+
+.txtTres {
+  grid-area: texto3;
+  border: 1px solid #3d3b61; }
+
+.imgUno {
+  grid-area: imagen1;
+  border: 1px solid #3d3b61; }
+
+.imgDos {
+  grid-area: imagen2;
+  border: 1px solid #3d3b61; }
+
+.imgTres {
+  grid-area: imagen3;
+  border: 1px solid #3d3b61; }
+
+.tablaUno {
+  grid-area: tabla1;
+  border: 1px solid #3d3b61; }
+
+.mainClass__col__parrafo {
+  /* Clase Parrafos dentro de tablas con estructura GRID / Estructura Col->texto*/
+  color: #57538D; }
+
+main div {
+  /*Bloques de informacion general*/
+  padding: 0.1rem; }
+
+/*----------------------------FIN Body-----------------------------------*/
+/*----------------------------INICIO Footer-----------------------------------*/
+.imagenFooter {
+  /*Clase Imagen fondo del footer*/
+  background-image: radial-gradient(circle at 50%, #57538D, #3d3b61);
+  background-size: contain;
+  width: 100%; }
+
+.footer {
+  color: white;
+  text-shadow: #838383 0px 0px 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem; }
+
+.fa-whatsapp {
+  /*Logo Whap*/
+  color: white;
+  background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat, radial-gradient(#25d366 60%, transparent 0); }
+
+.fa-instagram {
+  /*Logo IG*/
+  color: white;
+  background: linear-gradient(#cabbc6, #cabbc6) 14% 84%/16% 16% no-repeat, radial-gradient(#d3258a 60%, transparent 0); }
+
+.fa-facebook {
+  /*Logo FB*/
+  color: white;
+  background: linear-gradient(#a0a0a8, #2c36be) 14% 84%/16% 16% no-repeat, radial-gradient(#2c36be 60%, transparent 0); }
+
+/*----------------------------FIN Footer-----------------------------------*/
+/*----------------------------INICIO Contacto-----------------------------------*/
+#listaContacto {
+  /*Lista de valores de entrada en Contacto*/
+  padding-left: 0.5rem;
+  list-style-type: none; }
+
+.mainClass__mainContacto {
+  display: grid;
+  margin-top: 11rem;
+  grid-template-areas: "txtTit txtTit" "contactos form" "mapa form";
+  grid-template-columns: repeat(auto-fill);
+  grid-gap: 0.3rem; }
+
+.contactos {
+  grid-area: contactos;
+  border: 1px solid black; }
+
+.mapa {
+  grid-area: mapa;
+  border: 1px solid black; }
+
+.formContacto {
+  grid-area: form;
+  border: 1px solid black; }
+
+/*----------------------------FIN Contacto-----------------------------------*/
+/*----------------------------INICIO Adopcion-----------------------------------*/
+.mainClass__mainAdopcion {
+  display: grid;
+  margin-top: 11rem;
+  grid-template-areas: "txtTit txtTit" "imagen1 texto1";
+  grid-template-columns: repeat(auto-fill);
+  grid-gap: 0.3rem; }
+
+#imgCarrusel {
+  width: 10rem;
+  height: 10rem; }
+
+/*----------------------------FIN Adopcion-----------------------------------*/
+/*----------------------------INICIO Eleccion-----------------------------------*/
+.mainClass__mainEleccion {
+  display: grid;
+  margin-top: 11rem;
+  grid-template-areas: "txtTit txtTit" "imagen1 texto1" "imagen1 texto2";
+  grid-template-columns: repeat(auto-fill);
+  grid-gap: 0.3rem; }
+
+/*----------------------------FIN Eleccion-----------------------------------*/
+/*----------------------------INICIO Historia-----------------------------------*/
+.mainClass__mainHistoria {
+  display: grid;
+  margin-top: 11rem;
+  grid-template-areas: "txtTit txtTit" "imagen1 texto1" "tabla1 tabla1";
+  grid-template-columns: repeat(auto-fill);
+  grid-gap: 0.3rem; }
+
+#tbHist {
+  /* Id para Tabla de Historia de los Amigurumis*/
+  color: #57538D;
+  padding-top: "10";
+  border-spacing: "5";
+  border-style: double; }
+
+tr td {
+  /*tabla Historia - Valores de las celdas*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #7a98a7;
+  border: 1px; }
+
+tr td ol {
+  /*tabla Historia / Primeros Amigurumis / Valores de la lista*/
+  padding-left: 1.5rem; }
+
+tr td ul {
+  /*tabla Historia / Amigurumis en el mundo / Valores de la lista*/
+  padding-left: 1rem;
+  list-style-type: circle; }
+
+tr th {
+  background-color: #7a98a7;
+  border: "1px"; }
+
+tr td {
+  background-color: #b3e1f8;
+  border-style: double;
+  border: "1px"; }
+
+/*----------------------------FIN  Historia-----------------------------------*/
+/*----------------------------Inicio Mundo-----------------------------------*/
+.mainClass__mainMundo {
+  display: grid;
+  margin-top: 11rem; }
+
+.carousel {
+  width: 30%;
+  margin: auto; }
+
+.textCarr {
+  text-align: right;
+  text-shadow: black; }
+
+.d-block {
+  height: auto;
+  width: auto;
+  min-height: 165px;
+  min-width: 165px; }
+
+.imgUno {
+  height: auto;
+  width: auto;
+  min-height: 165px;
+  min-width: 165px; }
+
+/*
+.col {
+    padding-left: 0;
+    padding-right: 0;
+}*/
+/*----------------------------FIN Mundo-----------------------------------*/
+/*---------------------------------------INICIO MEDIA----------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .marcoPagina {
+    font-size: smaller; }
+  h2 {
+    font-size: 3rem; }
+  .mainSection {
+    grid-template-areas: "txtTit txtTit" "imagen1 texto1" "texto2 imagen2" "imagen3 texto3";
+    grid-gap: 0.2rem; }
+  h3 {
+    font-size: 1.3rem; }
+  .d-block {
+    min-height: 165px;
+    min-width: 165px; }
+  .imgUno {
+    min-height: auto;
+    min-width: auto; } }
+
+@media only screen and (max-width: 576px) {
+  /*Se asumen 576 segun BOOTSTRAP para Mobile*/
+  .marcoPagina {
+    font-size: x-small; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1rem; }
+  .mainSection {
+    grid-template-areas: "txtTit" "texto1" "imagen1" "texto2" "imagen2" "texto3" "imagen3";
+    grid-template-columns: repeat(auto-fill);
+    grid-gap: 0.1rem; }
+  .img {
+    margin: auto; }
+  .d-block {
+    min-height: 100px;
+    min-width: 100px; } }
+
+/*---------------------------------------FIN MEDIA----------------------------------------------*/

@@ -1,0 +1,37 @@
+/*----------------------------Inicio Mundo-----------------------------------*/
+
+.mainClass__mainMundo {
+    display:grid;
+    margin-top: $topReservado;
+
+}
+
+.carousel{
+    width: 30%;
+    margin: auto;
+}
+.textCarr{
+    text-align: right;
+    text-shadow: black;
+}
+
+.d-block{
+    height: auto;
+    width: auto;
+    min-height: 165px;
+    min-width: 165px;
+}
+.imgUno {
+    height: auto;
+    width: auto;
+    min-height: 165px;
+    min-width: 165px;
+} 
+
+/*
+.col {
+    padding-left: 0;
+    padding-right: 0;
+}*/
+
+/*----------------------------FIN Mundo-----------------------------------*/
