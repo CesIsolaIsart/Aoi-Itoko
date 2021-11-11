@@ -1,0 +1,169 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+Warning: PowerShell detected that you might be using a screen reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it, run 'Import-Module PSReadLine'.
+
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14> git status
+On branch master
+
+No commits yet  
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Desarrollo.rar
+        Desarrollo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Desarrollo.rar
+        Desarrollo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14> cd desarrollo
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git status    
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../Desarrollo.rar
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git add .
+warning: LF will be replaced by CRLF in Desarrollo/package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Desarrollo/package.json.
+The file will have its original line endings in your working directory
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git add .
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   adopcion/adopcion.html
+        new file:   contacto/contacto.html
+        new file:   css/main.css
+        new file:   eleccion/eleccion.html
+        new file:   historia/actualidad/actualidad.html
+        new file:   historia/historia.html
+        new file:   historia/inicios/inicios.html
+        new file:   imagenes/amiguverde.png
+        new file:   imagenes/ballena.png
+        new file:   imagenes/fondo footer.png
+        new file:   imagenes/fondo header.png
+        new file:   imagenes/googlemap.jpg
+        new file:   imagenes/mundo.png
+        new file:   imagenes/prima.png
+        new file:   imagenes/torta.png
+        new file:   index.html
+        new file:   mundo/mundo.html
+        new file:   package-lock.json
+        new file:   package.json
+        new file:   sass/main.scss
+        new file:   sass/secciones/_animaciones.scss
+        new file:   sass/secciones/_body.scss
+        new file:   sass/secciones/_footer.scss
+        new file:   sass/secciones/_header.scss
+        new file:   sass/secciones/_mediaQ.scss
+        new file:   sass/secciones/_pagAdopcion.scss
+        new file:   sass/secciones/_pagContacto.scss
+        new file:   sass/secciones/_pagEleccion.scss
+        new file:   sass/secciones/_pagHistoria.scss
+        new file:   sass/secciones/_pagMundo.scss
+        new file:   sass/secciones/_variables.scss
+        new file:   sitemap.html
+        new file:   sitemap.xml
+
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git commit -m "Primera subida a repositorio"
+[master (root-commit) da919aa] Primera subida a repositorio       
+ 33 files changed, 8019 insertions(+)
+ create mode 100644 Desarrollo/adopcion/adopcion.html
+ create mode 100644 Desarrollo/contacto/contacto.html
+ create mode 100644 Desarrollo/css/main.css
+ create mode 100644 Desarrollo/eleccion/eleccion.html
+ create mode 100644 Desarrollo/historia/actualidad/actualidad.html
+ create mode 100644 Desarrollo/historia/historia.html
+ create mode 100644 Desarrollo/historia/inicios/inicios.html
+ create mode 100644 Desarrollo/imagenes/amiguverde.png
+ create mode 100644 Desarrollo/imagenes/ballena.png
+ create mode 100644 Desarrollo/imagenes/fondo footer.png
+ create mode 100644 Desarrollo/imagenes/fondo header.png
+ create mode 100644 Desarrollo/imagenes/googlemap.jpg
+ create mode 100644 Desarrollo/imagenes/mundo.png
+ create mode 100644 Desarrollo/imagenes/prima.png
+ create mode 100644 Desarrollo/imagenes/torta.png
+ create mode 100644 Desarrollo/index.html
+ create mode 100644 Desarrollo/mundo/mundo.html
+ create mode 100644 Desarrollo/package-lock.json
+ create mode 100644 Desarrollo/package.json
+ create mode 100644 Desarrollo/sass/main.scss
+ create mode 100644 Desarrollo/sass/secciones/_animaciones.scss
+ create mode 100644 Desarrollo/sass/secciones/_body.scss
+ create mode 100644 Desarrollo/sass/secciones/_footer.scss
+ create mode 100644 Desarrollo/sass/secciones/_header.scss
+ create mode 100644 Desarrollo/sass/secciones/_mediaQ.scss
+ create mode 100644 Desarrollo/sass/secciones/_pagAdopcion.scss
+ create mode 100644 Desarrollo/sass/secciones/_pagContacto.scss
+ create mode 100644 Desarrollo/sass/secciones/_pagEleccion.scss
+ create mode 100644 Desarrollo/sass/secciones/_pagHistoria.scss
+ create mode 100644 Desarrollo/sass/secciones/_pagMundo.scss
+ create mode 100644 Desarrollo/sass/secciones/_variables.scss
+ create mode 100644 Desarrollo/sitemap.html
+ create mode 100644 Desarrollo/sitemap.xml
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git branch index
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git branch historia
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git branch contacto
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git branch --all
+  contacto
+  historia
+  index
+* master
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout index
+Switched to branch 'index'
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git branch --all   
+  contacto
+  historia
+* index
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git status          
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout index  
+Switched to branch 'index'
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout Master   
+Switched to branch 'Master'  
+M       Desarrollo/index.html
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout historia
+Switched to branch 'historia'
+M       Desarrollo/index.html
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout index    
+Switched to branch 'index'
+M       Desarrollo/index.html
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git add .
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git commit -m "Se modifican Lorems - Rama Index"
+[index cc15158] Se modifican Lorems - Rama Index
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout historia
+Switched to branch 'historia'
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git checkout master   
+Switched to branch 'master'
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo> git merge index
+Updating da919aa..cc15158
+Fast-forward
+ Desarrollo/index.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+PS C:\Users\cesar.isola.isart\Desktop\CoderHouse\Clase 14\desarrollo>
