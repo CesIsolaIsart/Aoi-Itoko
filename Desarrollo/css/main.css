@@ -313,7 +313,7 @@ tr td {
   /* Relación: 16/9 = 56.25% */
   position: relative; }
 
-iframe {
+.videoAmi {
   /* El iframe se adapta al tamaño del contenedor */
   position: absolute;
   height: 100%;
