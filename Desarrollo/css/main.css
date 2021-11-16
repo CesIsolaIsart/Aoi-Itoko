@@ -35,17 +35,18 @@
 .imagenHeader {
   /*Clase Imagen fondo de la cabecera/secciones*/
   background-color: #3d3b61;
-  /*    background-image: url("../imagenes//fondo\ header.png"); */
   background-image: radial-gradient(circle at 50%, #57538D, #3d3b61);
   width: 100%;
   position: fixed;
   text-shadow: #571637 0px 0px 5px;
   text-align: center;
-  top: 0; }
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 0; }
 
 .parrafo {
   /* Clase Parrafos: todos los parrafos base / Los parrafos dentro de GRID se pisan con col_parrafo*/
-  color: black; }
+  color: Black; }
 
 .col-md-auto {
   /*Alineacion Titulo*/
@@ -64,19 +65,21 @@ h2 {
   font-family: 'Indie Flower', regular;
   font-weight: 900;
   text-transform: lowercase;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #b3e1f8;
   animation-name: tituloInicio;
   /*una sola vez al cargar pagina*/
   animation-duration: 4s;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0rem; }
 
 .imageHeader__h3 {
   /* Titulo AOI ITOKO*/
   animation: tituloInicio;
   font-style: italic;
   text-align: center;
-  color: #b3e1f8; }
+  color: #b3e1f8;
+  font-size: 1.5rem; }
 
 .listaMenu {
   /*Menu - Clase:listaMenu*/
@@ -164,6 +167,9 @@ main div {
   /*Bloques de informacion general*/
   padding: 0.1rem; }
 
+.parrafo {
+  color: #57538D; }
+
 /*----------------------------FIN Body-----------------------------------*/
 /*----------------------------INICIO Footer-----------------------------------*/
 .imagenFooter {
@@ -173,7 +179,7 @@ main div {
   width: 100%; }
 
 .footer {
-  color: white;
+  color: black;
   text-shadow: #838383 0px 0px 5px;
   display: flex;
   flex-wrap: nowrap;
@@ -191,10 +197,9 @@ main div {
   color: white;
   background: linear-gradient(#cabbc6, #cabbc6) 14% 84%/16% 16% no-repeat, radial-gradient(#d3258a 60%, transparent 0); }
 
-.fa-facebook {
-  /*Logo FB*/
-  color: white;
-  background: linear-gradient(#a0a0a8, #2c36be) 14% 84%/16% 16% no-repeat, radial-gradient(#2c36be 60%, transparent 0); }
+.mapa {
+  text-align: right;
+  padding-right: 1rem; }
 
 /*----------------------------FIN Footer-----------------------------------*/
 /*----------------------------INICIO Contacto-----------------------------------*/
@@ -244,6 +249,10 @@ main div {
   grid-template-columns: repeat(auto-fill);
   grid-gap: 0.3rem; }
 
+#imgCarrusel {
+  width: 10rem;
+  height: 10rem; }
+
 /*----------------------------FIN Eleccion-----------------------------------*/
 /*----------------------------INICIO Historia-----------------------------------*/
 .mainClass__mainHistoria {
@@ -290,6 +299,27 @@ tr td {
   background-color: #b3e1f8;
   border-style: double;
   border: "1px"; }
+
+.delimitador {
+  width: 560px; }
+
+.contenedor {
+  /* El contenedor con el padding-top crea el tamaño del vídeo */
+  height: 0px;
+  width: 100%;
+  max-width: 560px;
+  /* Establecemos el ancho máximo*/
+  padding-top: 56.25%;
+  /* Relación: 16/9 = 56.25% */
+  position: relative; }
+
+iframe {
+  /* El iframe se adapta al tamaño del contenedor */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px; }
 
 /*----------------------------FIN  Historia-----------------------------------*/
 /*----------------------------Inicio Mundo-----------------------------------*/

@@ -2,17 +2,18 @@
 
 .imagenHeader{/*Clase Imagen fondo de la cabecera/secciones*/
     background-color:nth($colores, 3);
-/*    background-image: url("../imagenes//fondo\ header.png"); */
     background-image: radial-gradient(circle at 50%, nth($colores, 2),nth($colores, 3));
     width: 100%;
     position:fixed;
     text-shadow: nth($colores, 4) 0px 0px 5px;
     text-align:center;
     top: 0;
+    z-index: 1000;
+    margin-bottom: 0;
 }
 
 .parrafo{ /* Clase Parrafos: todos los parrafos base / Los parrafos dentro de GRID se pisan con col_parrafo*/
-    color: black;
+    color: Black;
 }
 .col-md-auto {/*Alineacion Titulo*/
     text-align:center;
@@ -29,18 +30,20 @@ h2{
     font-family: 'Indie Flower', regular;
     font-weight:900;
     text-transform: lowercase;
-    font-size: 5rem;
+    font-size: 3rem;
     color:nth($colores, 1);
     animation-name: tituloInicio; /*una sola vez al cargar pagina*/
     animation-duration: 4s;
     text-align:center;
-}
+    margin-bottom: 0rem;
+    }
 
 .imageHeader__h3{ /* Titulo AOI ITOKO*/
     animation: tituloInicio;
     font-style:italic;
     text-align:center;
     color: nth($colores, 1);
+    font-size: 1.5rem;
 }
 
 .listaMenu{ /*Menu - Clase:listaMenu*/

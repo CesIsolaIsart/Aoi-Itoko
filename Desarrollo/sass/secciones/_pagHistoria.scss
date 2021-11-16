@@ -1,12 +1,12 @@
 /*----------------------------INICIO Historia-----------------------------------*/
 
-.mainClass__mainHistoria {
+.mainClass__mainHistoria{
     display:grid;
     margin-top: $topReservado;
     grid-template-areas:
     "txtTit txtTit"
     "imagen1 texto1"
-    "tabla1 tabla1" ;
+    "tabla1 tabla1";
     grid-template-columns: repeat(auto-fill);
     grid-gap: 0.3rem;    
 }
@@ -51,4 +51,23 @@ tr td{
     border: "1px";
 }
 
+.delimitador{
+    width:560px;
+}
+    
+.contenedor{/* El contenedor con el padding-top crea el tamaño del vídeo */
+    height:0px;
+    width:100%;
+    max-width:560px; /* Establecemos el ancho máximo*/
+    padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+    position:relative;
+ }
+    
+iframe{/* El iframe se adapta al tamaño del contenedor */
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
 /*----------------------------FIN  Historia-----------------------------------*/
