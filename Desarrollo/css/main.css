@@ -154,7 +154,7 @@ body {
   column-gap: 5%;
   row-gap: 2%;
   margin-top: 3%;
-  margin-bottom: 16%; }
+  margin-bottom: 13rem; }
 
 .txtTitulo {
   grid-area: txtTit; }
@@ -275,7 +275,7 @@ footer nav p a {
   column-gap: 5%;
   row-gap: 2%;
   margin-top: 3%;
-  margin-bottom: 10%; }
+  margin-bottom: 10rem; }
 
 .txtTituloCont {
   grid-area: txtTitCont; }
@@ -405,7 +405,7 @@ button p {
   column-gap: 5%;
   row-gap: 2%;
   margin-top: 3%;
-  margin-bottom: 5%; }
+  margin-bottom: 6rem; }
 
 .txtTitulo {
   grid-area: txtTit; }
@@ -429,7 +429,7 @@ button p {
   column-gap: 5%;
   row-gap: 2%;
   margin-top: 3%;
-  margin-bottom: 10%; }
+  margin-bottom: 10rem; }
 
 .tablaUno {
   grid-area: tabla1; }
@@ -524,7 +524,7 @@ tr td {
   column-gap: 5%;
   row-gap: 2%;
   margin-top: 3%;
-  margin-bottom: 10%; }
+  margin-bottom: 10rem; }
 
 .txtTitulo {
   grid-area: txtTit; }
@@ -579,7 +579,7 @@ tr td {
     font-size: smaller; }
   h2 {
     font-size: 3rem; }
-  .marcoPagina__container-fluid {
+  .marcoPagina__container-fluid__main {
     grid-template-areas: "txtTit txtTit" "texto1 texto1" "imagen1 imagen1" "texto2 texto2" "texto3 imagen2" "imagen3 texto4";
     column-gap: 3%;
     row-gap: 1.5%;
@@ -639,7 +639,7 @@ tr td {
     grid-template-columns: repeat(auto-fill);
     column-gap: 3%;
     row-gap: 1%; }
-  .marcoPagina__container-fluid {
+  .marcoPagina__container-fluid__main {
     grid-template-areas: "txtTit" "texto1" "imagen1" "texto2" "imagen2" "texto3" "imagen3" "texto4";
     grid-template-columns: repeat(auto-fill);
     column-gap: 2%;

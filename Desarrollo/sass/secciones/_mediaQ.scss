@@ -7,7 +7,7 @@
     h2{
         font-size: 3rem;
     }
-    .marcoPagina__container-fluid {
+    .marcoPagina__container-fluid__main {
         grid-template-areas: 
         "txtTit txtTit"
         "texto1 texto1"
@@ -115,7 +115,7 @@
         row-gap: 1%;
     }
 
-    .marcoPagina__container-fluid {
+    .marcoPagina__container-fluid__main {
         grid-template-areas: 
         "txtTit"
         "texto1"
