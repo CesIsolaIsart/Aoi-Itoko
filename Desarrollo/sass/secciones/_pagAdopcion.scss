@@ -1,17 +1,34 @@
 /*----------------------------INICIO Adopcion-----------------------------------*/
 
-.mainClass__mainAdopcion{
+.container-fluid__adopcion{
     display:grid;
-    margin-top: $topReservado;
     grid-template-areas:
-    "txtTit txtTit"
-    "imagen1 texto1";
+    ". txtTit  txtTit txtTit ."
+    ". texto0  texto0 texto0 ."
+    ". imagen1  texto1 texto1 ."
+    ". texto2  texto2 texto2 .";
     grid-template-columns: repeat(auto-fill);
-    grid-gap: 0.3rem;  
+    column-gap: 5%;
+    row-gap: 2%;
+    margin-top: $margenReservadoUp;
+    margin-bottom: $margenReservadoBtm; 
 }
 
-#imgCarrusel{
-    width:10rem;
-    height:10rem;
+.txtTitulo{
+    grid-area: txtTit;
 }
+
+.txtUno{
+    grid-area: texto1;
+}
+
+.txtDos{
+    grid-area: texto1;
+}
+
+.imgUno{
+    grid-area: imagen1;
+}
+
+
 /*----------------------------FIN Adopcion-----------------------------------*/

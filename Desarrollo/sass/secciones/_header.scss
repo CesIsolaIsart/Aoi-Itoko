@@ -2,12 +2,13 @@
 
 .imagenHeader{/*Clase Imagen fondo de la cabecera/secciones*/
     background-color:nth($colores, 3);
-    background-image: radial-gradient(circle at 50%, nth($colores, 2),nth($colores, 3));
+    background-image: radial-gradient(ellipse at 50% 0%, nth($colores, 2),nth($colores, 3),nth($colores, 3));
     width: 100%;
     position:fixed;
     text-shadow: nth($colores, 4) 0px 0px 5px;
     text-align:center;
     top: 0;
+    left: 0;
     z-index: 1000;
     margin-bottom: 0;
 }
@@ -15,6 +16,11 @@
 .parrafo{ /* Clase Parrafos: todos los parrafos base / Los parrafos dentro de GRID se pisan con col_parrafo*/
     color: Black;
 }
+
+div div a{ /*Se da color a los vinculos del menú de selección*/
+    color: white;
+}
+
 .col-md-auto {/*Alineacion Titulo*/
     text-align:center;
 }
@@ -65,9 +71,7 @@ h2{
     animation-iteration-count: infinite;
 }
 
-.img :hover{
-    animation-name: rezizeImg;
-    animation-duration: 1s;
-}
+
+#activo { color: #b48484; }
 
 /*----------------------------FIN Header-----------------------------------*/

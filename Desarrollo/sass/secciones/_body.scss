@@ -1,65 +1,79 @@
 /*----------------------------INICIO Body-----------------------------------*/
-.marcoPagina{/*-----Se agrega clase para "pisar" main.css de prueba-----*/
+.marcoPagina{
     background-color: nth($colores, 1);
-
+    border-right-width: 10px;
+    border-right-style: solid;
+    border-right-color:  nth($colores, 3);
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color:  nth($colores, 3);
+    border-top-width: $topReservado;
+    border-top-style: solid;
+    border-top-color: nth($colores, 3);
+    border-bottom-width: 70px;
+    border-bottom-style: solid;
+    border-bottom-color: nth($colores, 3);
 }
 body{ /* Cuerpo de todas las páginas - Dejar siempre al inicio para poder pisar con otro más especifico*/
-    background-color: nth($colores, 1);
+    background-color: nth($colores, 3);
     color: nth($colores, 2);
     text-shadow: nth($colores, 6) 0px 0px 3px;
     font-family: 'Patrick Hand', regular;
-    text-align:left;
+    text-align:justify;
 } 
 .mainDiv {
-    margin-top: $topReservado;
+    /* margin-top: $topReservado; */
 }
-.mainClass__mainSection {
+.marcoPagina__container-fluid__main {
     display:grid;
-    margin-top: $topReservado;
     grid-template-areas: 
-    "txtTit txtTit txtTit"
-    "texto1 texto1 texto1"
-    "imagen1 texto2 imagen2"
-    "texto3 texto3 imagen3"; 
+    ". txtTit txtTit txtTit txtTit ."
+    ". texto1 texto1 texto1 texto1 ."
+    ". imagen1 imagen1 imagen1 imagen1 ."
+    ". texto2 texto2 texto2 texto2 ."
+    ". texto3 texto3 texto3 texto3 ."
+    ". imagen2 imagen2 imagen3 imagen3 ."
+    ". texto4 texto4 texto4 texto4 .";
     grid-template-columns: repeat(auto-fill);
-/*     grid-gap: 0.3rem; */
+    column-gap: 5%;
+    row-gap: 2%;
+    margin-top: $margenReservadoUp;
+    margin-bottom: $margenReservadoBtm;
 }
 
 .txtTitulo{
     grid-area: txtTit;
-    border: 1px solid nth($colores, 3);
 }
 .txtUno{
     grid-area: texto1;
-    border: 1px solid nth($colores, 3);
 }
 .txtDos{
     grid-area: texto2;
-    border: 1px solid nth($colores, 3);
 }
 .txtTres{
     grid-area: texto3;
-    border: 1px solid nth($colores, 3);
 }
-.imgUno{
+.txtCuatro{
+    grid-area: texto4;
+}
+.imgUnoMain{
     grid-area: imagen1;
-    border: 1px solid nth($colores, 3);
 }
 .imgDos{
     grid-area: imagen2;
-    border: 1px solid nth($colores, 3);
 }
 .imgTres{
     grid-area: imagen3;
-    border: 1px solid nth($colores, 3);
 }
-.tablaUno{
-    grid-area: tabla1;
+.imgResponsive {
+    width: 100%;
+    height: auto;
     border: 1px solid nth($colores, 3);
 }
 
-.mainClass__col__parrafo{ /* Clase Parrafos dentro de tablas con estructura GRID / Estructura Col->texto*/
-    color: nth($colores, 2);
+.tablaUno{
+    grid-area: tabla1;
+    border: 1px solid nth($colores, 3);
 }
 
 main div {/*Bloques de informacion general*/
@@ -70,6 +84,25 @@ main div {/*Bloques de informacion general*/
     color: nth($colores, 2);
 }
 
+.italica {
+    color: black;
+    font-style:italic;
+}
 
+.row {
+    margin-left: 0%;
+    margin-right: 0%;
+}
 
+.img :hover{
+    animation-name: rezizeImg;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.imgUnoMain :hover{
+    animation-name: rezizeImg2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 /*----------------------------FIN Body-----------------------------------*/

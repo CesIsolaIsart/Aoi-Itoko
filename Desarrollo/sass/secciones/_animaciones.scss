@@ -9,9 +9,19 @@
 }
 @keyframes rezizeImg {
     from {transform:scale(100%);}
-    to {transform:scale(115%);}
+    to {transform:scale(108%);}
 }
+@keyframes rezizeImg2 {
+    from {transform:scale(100%);}
+    to {transform:scale(103%);}
+}
+@keyframes rezizeImgMediaQ {
+    from {transform:scale(100%);}
+    to {transform:scale(100%);}
+}
+
 @keyframes rezizeTxt {
     from {transform:scale(100%);}
     to {transform:scale(105%);}
+    
 }

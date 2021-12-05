@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Amigurumi, muñeco, artesanía, tela, apego">
+    <meta name="keywords" content="Amigurumi, muñeco, artesanía, tela, apego, crochet, tejido, tejer, trapo, lana, hilo">
     <meta name="description" content= "Contacto - Aoi Itoko, La Prima Azul">
     <title>Aoi Itoko</title>
     <script src="https://kit.fontawesome.com/d8da29821e.js" crossorigin="anonymous"></script>
@@ -21,7 +21,6 @@
                 <div class="row">
                     <div class= "col">
                         <h1 class= "imageHeader__h2">Aoi Itoko</h1>
-                        <h3 class= "imageHeader__h3">La Prima Azul</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -37,96 +36,106 @@
                     <div class="col listaMenuInd liAdop">
                         <a href= "../adopcion/adopcion.html"> Amigurumis en Adopción</a>
                     </div>
-                    <div class="col listaMenuInd liElec">
-                        <a href= "../eleccion/eleccion.html"> Tu Amigurumi</a>
-                    </div>
                     <div class="col listaMenuInd liCont">
-                        <a href= "../contacto/contacto.html"> Contacto</a>
+                        <a id="activo" href= "../contacto/contacto.html"> Contacto</a>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="mainClass__mainContacto"> <!-- Bloque de Contacto -->
-                <div class = "txtTitulo" >
-                    <h3>¡Contáctanos!</h3>
-                </div>
-                <div class= "contactos">
-                    <ul id= "listaContacto">
-                        <li>
-                            <a href="http://www.instagram.com" target="_blank"> 
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            - Instagram
-                        </li>
-                        <li>
-                            <a href="https://wa.me/1151234567" target="_blank"> 
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            - WhatsApp
-                        </li>
-                    </ul>
-                </div>
-                <div class= "mapa">
-                    <img src="../imagenes/googlemap.jpg" alt="Imagen Amigurumi Adoptado" width=150px height=150px>
-                    <p>Mapa/Puntos de venta.</p>
-                </div>
-                <div class= "formContacto"> <!-- El encolumnado se realizará a traves de GRID o tabla, no con puntos en el label -->
-                    <form action=""> <!-- método no desarrollado para guardar la información -->
-                        <div>
-                            <label for="nombre_apellido">Nombre:...................</label> 
-                            <input type="text" name="nombre_apellido">
+            <section class="mainClass__mainContacto"> <!-- Dividido en bloques para usar Grids -->
+                <nav class="marcoPagina__container-fluid__contacto">
+                    <div class = "txtTituloCont" > <!-- Bloque de Quienes Somos -->
+                        <h3>¡Contactanos!</h3>
+                    </div>
+                    <div class= "contactos">
+                        <ul>
+                            <li id= "listaContacto">
+                                <p>Por teléfono</p>
+                                <p>o</p>
+                                <p>en nuestras redes sociales:</p>
+                                <p>&nbsp</p>
+                                <p>&nbsp</p>
+                            </li>
+                            <li>
+                                <a href="http://www.instagram.com" target="_blank"> 
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                - Instagram
+                            </li>
+                            <li>
+                                <a href="https://wa.me/1151234567" target="_blank"> 
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                - WhatsApp
+                            </li>
+                        </ul>
+                    </div>
+                    <div class= "mapaGoogle">
+                        <p>O podés buscarnos físicamente en:</p>
+                        <div class="map-responsive">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Balcarce%2050,%20C1064%20CABA&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                </iframe>
+                                <br>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label>Localidad:.................
-                                <select name="pais">
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Bolivia">Bolivia</option>
-                                    <option value="Chile">Chile</option>
-                                    <option value="Colombia">Colombia</option>
-                                    <option value="Ecuador">Ecuador</option>
-                                    <option value="Paraguay">Paraguay</option>
-                                    <option value="Perú">Perú</option>
-                                    <option value="Uruguay">Uruguay</option>
-                                    <option value="Venezuela">Venezuela</option>
-                                </select>
-                            </label>
+                    </div>
+                    <div class= "formContacto">
+                        <div class="contact_form">
+                            <div class="formulario">      
+                                <p class= "titForm">Formulario de contacto</p>
+                                <p class= "subtitForm">Escribinos, nos pondremos en contacto con vos</p>
+                                <form action="xxx" method="xxx">      
+                                    <p>
+                                        <label for="nombre" class="colocar_nombre">Nombre</label>
+                                        <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribí tu nombre">
+                                    </p>
+                                    <p>
+                                        <label for="email" class="colocar_email">Email</label>
+                                        <input type="email" name="introducir_email" id="email" placeholder="Escribí tu Email">
+                                    </p>
+                                    <p>
+                                        <label for="telefone" class="colocar_telefono">Teléfono</label>
+                                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribí tu teléfono">
+                                    </p>    
+                                    <p>
+                                        <label for="asunto" class="colocar_asunto">Asunto</label>
+                                        <input type="text" name="introducir_asunto" id="assunto" placeholder="Escribí un asunto">
+                                    </p>    
+                                    <p>
+                                        <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" placeholder="Dejanos tu comentario..."></textarea> 
+                                    </p>                    
+                                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                                </form>
+                            </div> 
                         </div>
-                        <div>
-                            <label for="mayor">Eres mayor de edad?</label>
-                            <input type="radio" name="mayor" value="Sí"> Sí
-                            <input type="radio" name="mayor" value="No"> No
-                        </div>  
-                        <div>
-                            <label for="email">Correo Electrónico:</label>
-                            <input type="text" name="email">
-                        </div>
-                        <div>
-                            <label for="mensaje">Tu Mensaje:..............</label>
-                            <textarea type="" name="mensaje"></textarea>
-                        </div>
-                        <div>
-                            <input type="reset" value="Eliminar"> <!-- método no desarrollado para guardar la información -->
-                            <input type="submit" value="Enviar"> <!-- método no desarrollado para guardar la información -->
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </nav>
             </section>
         </main>
-        <hr> <!-- Línea solo para ordenar y diferenciar el cuerpo del pie de página. No queda en el proyecto final -->
         <footer  class="imagenFooter">
             <nav class= "navFooter">
-                <p class="footer">COPYRIGHT AOI ITOKO - 2021. TODOS LOS DERECHOS RESERVADOS. Contacto: 
-                <a href="http://www.instagram.com" target="_blank"> 
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://wa.me/1151234567" target="_blank"> 
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                <p class="footer">COPYRIGHT AOI ITOKO - 2021. TODOS LOS DERECHOS RESERVADOS.
                 </p>
             </nav>
-            <nav  class= "mapa">
-                <a href="../sitemap.html">Mapa de Sitio</a>
+            <nav>
+                <p class="contacto">Contacto:
+                    <a href="http://www.instagram.com" target="_blank"> 
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    &nbsp
+                    <a href="https://wa.me/1151234567" target="_blank"> 
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <span>&nbsp / &nbsp</span>
+                    <span class= "mapa">Mapa de Sitio</span>
+                    <span>&nbsp</span>
+                    <a class= "mapaTexto" href="../sitemap.html"><i class="fas fa-sitemap"></i></a>
+                </p>
             </nav>
         </footer>
     </section>

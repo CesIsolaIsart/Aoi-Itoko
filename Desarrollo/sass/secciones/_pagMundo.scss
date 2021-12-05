@@ -1,37 +1,69 @@
 /*----------------------------Inicio Mundo-----------------------------------*/
 
-.mainClass__mainMundo {
+.container-fluid__mundo {
     display:grid;
-    margin-top: $topReservado;
-
+    grid-template-areas: 
+    ". txtTit txtTit txtTit txtTit ."
+    ". texto0 texto0 texto0 texto0 ."
+    ". imagen1 imagen1 imagen2 imagen2 ."
+    ". texto1 texto1 texto2 texto2 ."
+    ". imagen3 imagen3 imagen4 imagen4 ."
+    ". texto3 texto3 texto4 texto4 .";
+    grid-template-columns: repeat(auto-fill);
+    column-gap: 5%;
+    row-gap: 2%;
+    margin-top: $margenReservadoUp;
+    margin-bottom: $margenReservadoBtm;
+}
+.txtTitulo{
+    grid-area: txtTit;
+}
+.txtInicio{
+    grid-area: texto0;
+}
+.txtUno{
+    grid-area: texto1;
+}
+.txtDos{
+    grid-area: texto2;
+}
+.txtTres{
+    grid-area: texto3;
+}
+.txtCuatro{
+    grid-area: texto4;
 }
 
-.carousel{
-    width: 30%;
-    margin: auto;
+.imgUno{
+    grid-area: imagen1;
 }
+.imgDos{
+    grid-area: imagen2;
+}
+.imgTres{
+    grid-area: imagen3;
+}
+.imgCuatro{
+    grid-area: imagen4;
+}
+
+.carousel-inner{
+    border: 1px solid nth($colores, 3);
+    border-left: 4px solid nth($colores, 3);
+    border-right: 4px solid nth($colores, 3);
+    background-color: nth($colores, 2);
+}
+
 .textCarr{
     text-align: right;
     text-shadow: black;
 }
 
 .d-block{
-    height: auto;
-    width: auto;
-    min-height: 165px;
-    min-width: 165px;
+    height:fit-content;
+    width:fit-content;
+    min-height: 250px;
+    min-width: 250px;
 }
-.imgUno {
-    height: auto;
-    width: auto;
-    min-height: 165px;
-    min-width: 165px;
-} 
-
-/*
-.col {
-    padding-left: 0;
-    padding-right: 0;
-}*/
 
 /*----------------------------FIN Mundo-----------------------------------*/

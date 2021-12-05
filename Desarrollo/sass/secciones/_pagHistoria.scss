@@ -1,14 +1,21 @@
 /*----------------------------INICIO Historia-----------------------------------*/
 
-.mainClass__mainHistoria{
+.marcoPagina__container-fluid__hist{
     display:grid;
-    margin-top: $topReservado;
+    /* margin-top: $topReservado; */
     grid-template-areas:
-    "txtTit txtTit"
-    "imagen1 texto1"
-    "tabla1 tabla1";
+    ". txtTit txtTit ."
+    ". imagen1 texto1 ."
+    ". tabla1 tabla1 .";
     grid-template-columns: repeat(auto-fill);
-    grid-gap: 0.3rem;    
+    column-gap: 5%;
+    row-gap: 2%;
+    margin-top: $margenReservadoUp;
+    margin-bottom: $margenReservadoBtm; 
+}
+
+.tablaUno{
+    grid-area: tabla1;
 }
 
 #tbHist{ /* Id para Tabla de Historia de los Amigurumis*/
@@ -70,4 +77,30 @@ tr td{
     top:0px;
     left:0px;
 }
+
+.recuadroVideo {
+    background-color:nth($colores, 7);
+    display: flex;
+    padding: 2.5%;
+    max-width:560px
+}
+
+.video-container {
+    flex: 1;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+  .d1>.text {
+    flex: 1;
+  }
 /*----------------------------FIN  Historia-----------------------------------*/

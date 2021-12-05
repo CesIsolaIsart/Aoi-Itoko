@@ -1,36 +1,57 @@
 /*----------------------------INICIO Footer-----------------------------------*/
 .imagenFooter{/*Clase Imagen fondo del footer*/
-    background-image: radial-gradient(circle at 50%, nth($colores, 2),nth($colores, 3));
+    background-image: radial-gradient(ellipse at 50% 100%, nth($colores, 2),nth($colores, 3),nth($colores, 3));
     background-size:contain;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
 }
+
 .footer{
     color: black;
     text-shadow: rgb(131, 131, 131) 0px 0px 5px;
     display: flex;
-    flex-wrap:nowrap;
+/*     flex-wrap:nowrap; */
     justify-content:center;
     margin:auto;
-    padding: 1rem;
 }
+
+.contacto{
+    text-align: center;
+    color: nth($colores, 1);
+}
+
 .fa-whatsapp  {/*Logo Whap*/
-    color:white;
+    color:nth($colores, 1);
     background:
      linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat,
      radial-gradient(#25d366 60%,transparent 0);
 }
+
 .fa-instagram  {/*Logo IG*/
-    color:white;
+    color:nth($colores, 1);
     background:
     linear-gradient(#cabbc6,#cabbc6) 14% 84%/16% 16% no-repeat,
     radial-gradient(#d3258a 60%,transparent 0);
 }
 
-
-.mapa {
-    text-align: right;
-    padding-right: 1rem;
+.mapaTexto {
+    color: nth($colores, 4);
+    font-style:normal;
 }
 
+.mapa{
+    color: nth($colores, 4);  
+}
 
+footer nav p a{ /*Anula el subrayado de color azul propio de links*/
+    color: transparent;
+    text-shadow: transparent;
+}
+
+.mapaTexto:hover{ /*Anula el cambio a color azul propio de links*/
+    color: nth($colores, 4);
+}
 /*----------------------------FIN Footer-----------------------------------*/

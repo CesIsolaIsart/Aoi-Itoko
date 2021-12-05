@@ -1,30 +1,169 @@
 /*----------------------------INICIO Contacto-----------------------------------*/
 
-#listaContacto {/*Lista de valores de entrada en Contacto*/
-    padding-left: 0.5rem;
+.contactos ul li{
     list-style-type: none;
+    padding-left: 0rem;
 }
 
-.mainClass__mainContacto{
-    display:grid;
-    margin-top: $topReservado;
-    grid-template-areas:
-    "txtTit txtTit"
-    "contactos form"
-    "mapa form";
-    grid-template-columns: repeat(auto-fill);
-    grid-gap: 0.3rem;
+.contactos ul {
+    padding-left: 0rem;
 }
+
+#listaContacto p {
+    margin-bottom: 0; 
+}
+
+.marcoPagina__container-fluid__contacto{
+    display:grid;
+    /* margin-top: $topReservado; */
+    grid-template-areas:
+    ". txtTitCont txtTitCont ."
+    ". contactos form ."
+    ". mapa form ."
+    ". nada form .";
+    grid-template-columns: repeat(auto-fill);
+    column-gap: 5%;
+    row-gap: 2%;
+    margin-top: $margenReservadoUp;
+    margin-bottom: $margenReservadoBtm;
+}
+.txtTituloCont {
+    grid-area: txtTitCont;
+}
+
 .contactos{
     grid-area: contactos;
-    border: 1px solid black;    
+    border: 1px solid black;
+    text-align:center;
+    border-radius: 5px;
 }
-.mapa{
-    grid-area: mapa;
-    border: 1px solid black;       
+
+.contactos ul li a{
+    color: transparent;
+    text-shadow: transparent;
 }
+
 .formContacto{
     grid-area: form;
-    border: 1px solid black;    
+    border: 1px solid black;
+    border-radius: 5px;
 }
+
+.mapaGoogle {
+    grid-area: mapa;
+    border: 1px solid black;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.mapouter{
+    text-align:right;
+    margin: auto;
+    height:300px;
+    width:300px;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:70%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:10%;
+    top:5%;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+
+/*------------------------*/
+
+.contact_form{  
+    width: 330px; 
+    height: auto;
+    margin: 5px auto;
+    border-radius: 10px;  
+    padding-top: 1%;
+    padding-bottom: 1%;  
+    background-color: nth($colores, 8);
+    padding-left: 1%;
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: white;
+}
+  
+input{
+    background-color: white; 
+    width: 315px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: nth($colores, 3);
+}
+  
+textarea{
+    background-color:white;
+    width: 315px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: nth($colores, 3);
+}
+  
+label{
+    display: block; 
+    float: center;  
+}
+  
+button{
+    height: 45px;
+    margin: auto; 
+    text-transform: uppercase;
+    background-color: nth($colores, 3);
+    border-color: nth($colores, 1);
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 315px;
+    cursor: pointer;
+}
+  
+button p{
+    color: white;
+}
+  
+.titForm{
+    font-size: 25px;
+    text-align: center; 
+    padding-bottom: 20px; 
+    color: nth($colores, 3);
+}
+  
+.subtitForm{
+    font-size: 16px; 
+    text-align: center; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+ 
+::-webkit-input-placeholder {
+   color: nth($colores, 6);
+}
+  
+::-webkit-textarea-placeholder {
+   color: nth($colores, 6);
+}
+  
+.formulario input:focus{
+    outline:0;
+    border: 2px solid nth($colores, 4);
+}
+  
+ .formulario textarea:focus{
+    outline:0;
+    border: 2px solid nth($colores, 4);
+}
+  
 /*----------------------------FIN Contacto-----------------------------------*/
