@@ -649,7 +649,8 @@ tr td {
     border-right-color: #b3e1f8;
     border-left-width: 10px;
     border-left-style: solid;
-    border-left-color: #b3e1f8; }
+    border-left-color: #b3e1f8;
+    margin-bottom: 6rem; }
   .img {
     margin: auto; }
   .d-block {
