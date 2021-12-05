@@ -674,6 +674,21 @@ tr td {
     animation-duration: 1s;
     animation-fill-mode: forwards; }
   .recuadroVideo {
-    padding: 1%; } }
+    padding: 1%; }
+  .contact_form {
+    width: 270px; }
+  input {
+    width: 260px;
+    height: 40px; }
+  textarea {
+    background-color: white;
+    width: 260px;
+    height: 100px; }
+  label {
+    display: block;
+    float: center; }
+  button {
+    height: 35px;
+    width: 258px; } }
 
 /*---------------------------------------FIN MEDIA----------------------------------------------*/
