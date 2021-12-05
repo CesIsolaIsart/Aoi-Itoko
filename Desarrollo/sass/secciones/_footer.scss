@@ -13,7 +13,6 @@
     color: black;
     text-shadow: rgb(131, 131, 131) 0px 0px 5px;
     display: flex;
-/*     flex-wrap:nowrap; */
     justify-content:center;
     margin:auto;
 }
@@ -37,21 +36,9 @@
     radial-gradient(#d3258a 60%,transparent 0);
 }
 
-.mapaTexto {
-    color: nth($colores, 4);
-    font-style:normal;
-}
-
-.mapa{
-    color: nth($colores, 4);  
-}
-
 footer nav p a{ /*Anula el subrayado de color azul propio de links*/
     color: transparent;
     text-shadow: transparent;
 }
 
-.mapaTexto:hover{ /*Anula el cambio a color azul propio de links*/
-    color: nth($colores, 4);
-}
 /*----------------------------FIN Footer-----------------------------------*/
