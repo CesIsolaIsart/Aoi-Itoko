@@ -2,7 +2,6 @@
 
 .marcoPagina__container-fluid__hist{
     display:grid;
-    /* margin-top: $topReservado; */
     grid-template-areas:
     ". txtTit txtTit ."
     ". imagen1 texto1 ."
@@ -62,15 +61,15 @@ tr td{
     width:560px;
 }
     
-.contenedor{/* El contenedor con el padding-top crea el tamaño del vídeo */
+.contenedor{
     height:0px;
     width:100%;
-    max-width:560px; /* Establecemos el ancho máximo*/
+    max-width:560px;
     padding-top:56.25%; /* Relación: 16/9 = 56.25% */
     position:relative;
  }
     
-.videoAmi{/* El iframe se adapta al tamaño del contenedor */
+.videoAmi{
     position:absolute;
     height:100%;
     width:100%;
@@ -100,7 +99,4 @@ tr td{
     height: 100%;
 }
   
-  .d1>.text {
-    flex: 1;
-  }
 /*----------------------------FIN  Historia-----------------------------------*/
