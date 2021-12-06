@@ -29,7 +29,6 @@
 
     .marcoPagina__container-fluid__contacto{
         display:grid;
-        /* margin-top: $topReservado; */
         grid-template-areas:
         ". txtTitCont ."
         ". form ."
@@ -53,7 +52,6 @@
 
     .marcoPagina__container-fluid__hist{
         display:grid;
-        /* margin-top: $topReservado; */
         grid-template-areas:
         ". txtTit ."
         ". imagen1 ."

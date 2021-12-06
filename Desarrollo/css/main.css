@@ -148,9 +148,6 @@ body {
   font-family: 'Patrick Hand', regular;
   text-align: justify; }
 
-.mainDiv {
-  /* margin-top: $topReservado; */ }
-
 .marcoPagina__container-fluid__main {
   display: grid;
   grid-template-areas: ". txtTit txtTit txtTit txtTit ." ". texto1 texto1 texto1 texto1 ." ". imagen1 imagen1 imagen1 imagen1 ." ". texto2 texto2 texto2 texto2 ." ". texto3 texto3 texto3 texto3 ." ". imagen2 imagen2 imagen3 imagen3 ." ". texto4 texto4 texto4 texto4 .";
@@ -224,7 +221,7 @@ main div {
 /*----------------------------FIN Body-----------------------------------*/
 /*----------------------------INICIO Footer-----------------------------------*/
 .imagenFooter {
-  /*Clase Imagen fondo del footer*/
+  /*Clase contenedora footer*/
   background-image: radial-gradient(ellipse at 50% 100%, #57538D, #3d3b61, #3d3b61);
   background-size: contain;
   width: 100%;
@@ -273,7 +270,6 @@ footer nav p a {
 
 .marcoPagina__container-fluid__contacto {
   display: grid;
-  /* margin-top: $topReservado; */
   grid-template-areas: ". txtTitCont txtTitCont ." ". contactos form ." ". mapa form ." ". nada form .";
   grid-template-columns: repeat(auto-fill);
   column-gap: 5%;
@@ -588,7 +584,6 @@ tr td {
     border-left-color: #b3e1f8; }
   .marcoPagina__container-fluid__contacto {
     display: grid;
-    /* margin-top: $topReservado; */
     grid-template-areas: ". txtTitCont ." ". form ." ". contactos ." ". mapa .";
     column-gap: 3%;
     row-gap: 1.5%; }
@@ -599,7 +594,6 @@ tr td {
     row-gap: 1.5%; }
   .marcoPagina__container-fluid__hist {
     display: grid;
-    /* margin-top: $topReservado; */
     grid-template-areas: ". txtTit ." ". imagen1 ." ". texto1 ." ". tabla1 .";
     column-gap: 3%;
     row-gap: 1.5%; }
